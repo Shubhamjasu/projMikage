@@ -56,7 +56,7 @@ nav{
     margin: 0;
     width: 100%;
     height: 876px;
-    background-image: url("レイヤー_6.jpg") ;
+    background-image: url("images\images2\bg.png") ;
     box-sizing: border-box;
     display:flex;
     flex-direction: row;
