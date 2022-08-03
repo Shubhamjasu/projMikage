@@ -12,12 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -37,11 +39,6 @@
   <body>
     <div class="header">
       <nav>
-        <span class="material-icons"
-          ><img
-            src="images\menu_FILL0_wght400_GRAD0_opsz48.png"
-            alt="loading image"
-        /></span>
         <a href="index.html" class="logo"
           ><img
             src="images/ベクトルスマートオブジェクト.png"
@@ -68,6 +65,30 @@
           </ul>
         </div>
       </nav>
+    </div>
+    <div class="header-sp">
+      <div class="dropdown">
+        <img src="images\menu_FILL0_wght400_GRAD0_opsz48.png" alt="loading image" onclick="myFunction()" class="dropbtn" /></span>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#bh">Beef & Hart</a>
+          <a href="#work">Works</a>
+          <a href="#about">About</a>
+          <a href="#cmpy">Company</a>
+          <a href="#cont">Contact</a>
+        </div>
+      </div>
+      <a href="index.html" class="logo-sp">
+        <img src="images/ベクトルスマートオブジェクト.png" alt="loading image"/>
+      </a>
+      <button>
+        <img
+          src="images/globe-solid.png"
+          width="16"
+          height="16"
+          alt="loading image"
+        />
+        English
+      </button>
     </div>
     <section id="bh">
       <!-- <div class="bh-container"> -->
@@ -129,14 +150,14 @@
           </span>
         </div>
         <div class="center item">
-            <h3>2021 autumn</h3>
-            <br /><img src="images/rogo_aa.png" alt="loading image" />
-            <br /><br />
-            <span>
-              AAproject <br />
-              未公開
-            </span>
-          </div>
+          <h3>2021 autumn</h3>
+          <br /><img src="images/rogo_aa.png" alt="loading image" />
+          <br /><br />
+          <span>
+            AAproject <br />
+            未公開
+          </span>
+        </div>
       </div>
     </section>
     <section id="about">
@@ -256,6 +277,26 @@
           },
         },
       });
+
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
     </script>
   </body>
 </html>

@@ -9,9 +9,11 @@
   justify-content: center;
   align-items: center;
 }
-.material-icons {
+.header-sp{
   display: none;
 }
+
+
 nav {
   display: flex;
   padding: 20px 10%;
@@ -165,6 +167,12 @@ nav {
   display: flex;
   flex-direction: row;
   height: 70%;
+}
+.owl-stage img{
+    padding: 0 4%;
+    width: 250px;
+    height: 265px;
+    margin: auto;
 }
 .work-container h3 {
   text-align: center;
@@ -573,15 +581,94 @@ td {
   }
 }
 @media (max-width: 768px) {
-  .nav-links ul li a {
-    display: none;
-  }
-  .material-icons {
+
+  .header-sp{
     display: unset;
   }
-  .logo {
-    padding-left: 14%;
+  
+  .header-sp{
+    width: 100%;
+    height: 81px;
+    box-shadow: 0 3px 10px #dadada;
+    background-color: #ffffff;
+    display: flex;
+  /* padding: 0px 10%; */
+  justify-content: space-around;
+  align-items: center;
   }
+  .header-sp button {
+    width: 145px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #b72e33;
+    background-image: linear-gradient(45deg, #ff7d00 20%, #ff544f 80%);
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    /* position: relative;
+      left: 25%; */
+  }
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #dadada;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+    #work .owl-prev,
+#work .owl-next {
+    width: 65px;
+    height: max-content;
+}
+#work .owl-prev span,
+#work .owl-next span {
+    justify-content: space-evenly;
+    justify-items: center;
+    font-size: 44px;
+}
+  .header{
+    display: none;
+  }
+  /* .logo {
+    padding-left: 14%;
+  } */
   /* .work-container .center, .work-container .right{
         display: none;
     } */
