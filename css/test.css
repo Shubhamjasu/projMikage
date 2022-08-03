@@ -1,7 +1,6 @@
 * {
     margin: 0;
   }
-  
   .header {
     width: 100%;
     height: 81px;
@@ -10,9 +9,16 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .header-sp {
+  .header-sp{
     display: none;
+  }
+  
+  
+  nav {
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .logo {
@@ -21,14 +27,12 @@
     background-color: #ffffff;
     cursor: pointer;
   }
-  
   .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 0px 9px;
     position: relative;
   }
-  
   .nav-links ul li a {
     text-decoration: none;
     color: #000000;
@@ -36,7 +40,6 @@
     font-size: 18px;
     font-weight: 500;
   }
-  
   .nav-links button {
     width: 165px;
     height: 42px;
@@ -51,18 +54,16 @@
     /* position: relative;
       left: 25%; */
   }
-  
   #bh {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 876px;
+    height: max-content;
     background-image: url("../images/レイヤー_6.jpg");
     /* box-sizing: border-box; */
     display: flex;
     flex-direction: row;
   }
-  
   /* 
       display: flex;
       flex-direction: column;
@@ -73,16 +74,13 @@
     flex: 50%;
     padding-top: 190px;
   }
-  
   #bh .left {
     padding-left: 10%;
   }
-  
   #bh .right {
     justify-content: space-between;
     padding-right: 75px;
   }
-  
   #bh .right h1 {
     width: 100%;
     height: 10%;
@@ -94,7 +92,6 @@
     letter-spacing: normal;
     text-align: left;
   }
-  
   #bh .right p {
     width: 100%;
     height: 246px;
@@ -107,7 +104,6 @@
     line-height: 38px;
     text-align: left;
   }
-  
   #bh .right button {
     width: 266px;
     height: 50px;
@@ -124,7 +120,6 @@
     line-height: normal;
     cursor: pointer;
   }
-  
   #work {
     width: 100%;
     height: 800px;
@@ -132,7 +127,6 @@
     padding: 3% 0%;
     text-align: center;
   }
-  
   #work h2 {
     width: 100%;
     height: 22px;
@@ -144,7 +138,6 @@
     letter-spacing: normal;
     line-height: 38px;
   }
-  
   #work h1 {
     width: 100%;
     height: 36px;
@@ -157,9 +150,8 @@
     line-height: 38px;
     text-transform: uppercase;
   }
-  
   #work a {
-    width: 197px;
+    width: 100%;
     height: 20px;
     color: #ff7d00;
     font-family: Poppins;
@@ -169,7 +161,7 @@
     /* Text style for "h, ttps://" */
     font-style: normal;
     letter-spacing: 1.28px;
-    line-height: 5;
+    line-height: 4;
   }
   
   .work-container {
@@ -177,19 +169,16 @@
     flex-direction: row;
     height: 70%;
   }
-  
-  .owl-stage img {
-    padding: 0 4%;
-    width: 250px;
-    height: 265px;
-    margin: auto;
+  .owl-stage img{
+      padding: 0 4%;
+      width: 250px;
+      height: 265px;
+      margin: auto;
   }
-  
   .work-container h3 {
     text-align: center;
     padding-right: 5%;
   }
-  
   .work-container .left {
     flex: 33%;
     height: 100%;
@@ -202,7 +191,8 @@
     letter-spacing: normal;
     line-height: 38px;
     text-align: left;
-    /* padding-left: 3%; */
+    padding-left: 3%;
+    padding-right: 5%;
   }
   
   .work-container .center {
@@ -217,9 +207,9 @@
     letter-spacing: normal;
     line-height: 38px;
     text-align: left;
-    /* padding-left: 3%; */
+    padding-left: 3%;
+    padding-right: 5%;
   }
-  
   .work-container .right {
     flex: 33%;
     height: 100%;
@@ -232,9 +222,9 @@
     letter-spacing: normal;
     line-height: 38px;
     text-align: left;
-    /* padding-left: 3%; */
+    padding-left: 3%;
+    padding-right: 5%;
   }
-  
   #work .owl-prev,
   #work .owl-next {
     width: 55px;
@@ -244,14 +234,12 @@
     border: none;
     cursor: pointer;
   }
-  
   #work .owl-prev span,
   #work .owl-next span {
     font-size: 38px;
     color: white;
     font-family: "Poppins";
   }
-  
   #about {
     background-image: url("../images/bg.png");
     width: 100%;
@@ -260,11 +248,9 @@
     text-align: center;
     padding-top: 6%;
   }
-  
-  #about div {
+  /* #about div {
     padding-top: 2%;
-  }
-  
+  } */
   #about .title h2 {
     width: 100%;
     height: 32px;
@@ -275,8 +261,8 @@
     font-style: normal;
     letter-spacing: normal;
     line-height: 38px;
+    padding-top: 2%;
   }
-  
   #about .capt h1 {
     width: 100%;
     height: 31px;
@@ -289,11 +275,11 @@
     line-height: 38px;
     text-transform: uppercase;
     letter-spacing: 3.04px;
+    padding-top: 2%;
   }
-  
   #about .des p {
     width: 100%;
-    height: 97px;
+    height: max-content;
     color: #000000;
     font-family: "Noto Sans JP";
     font-size: 20px;
@@ -310,13 +296,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 2%;
   }
-  
   #about .twit-links div {
     padding: 2% 2%;
     width: 65px;
   }
-  
   #about .twit-links div a {
     height: 19px;
     color: #00aced;
@@ -329,7 +314,6 @@
     text-align: left;
     text-decoration: none;
   }
-  
   #cmpy {
     width: 100%;
     height: 748px;
@@ -351,7 +335,6 @@
     position: relative;
     left: 10%;
   }
-  
   table tr:nth-child(odd) {
     background-color: #fff9f4;
   }
@@ -373,7 +356,6 @@
     letter-spacing: 2.08px;
     padding-left: 4%;
   }
-  
   td {
     color: #000000;
     font-family: "Noto Sans CJ Kjp";
@@ -386,7 +368,6 @@
     letter-spacing: 2.08px;
     padding-left: 9%;
   }
-  
   #cmpy .title {
     color: #ff7d00;
     font-family: "Poppins";
@@ -415,7 +396,6 @@
     position: relative;
     text-align: center;
   }
-  
   #cont .title {
     width: 100%;
     height: 21px;
@@ -427,7 +407,6 @@
     letter-spacing: normal;
     padding-top: 6%;
   }
-  
   #cont .capt {
     width: 100%;
     height: 36px;
@@ -439,7 +418,6 @@
     letter-spacing: normal;
     padding-top: 3%;
   }
-  
   #cont button {
     width: 266px;
     height: 50px;
@@ -464,7 +442,6 @@
     height: 81px;
     background-color: #ffffff;
   }
-  
   #cpr8 p {
     width: 100%;
     height: 22px;
@@ -475,28 +452,23 @@
     text-align: center;
     padding: 2% 0%;
   }
-  
   @media (max-width: 1310px) {
     .nav-links ul li a {
       font-size: 15px;
     }
-  
     .logo {
       width: 110px;
       height: 34px;
     }
-  
     .nav-links button {
       width: 110px;
       height: 34px;
       font-size: 16px;
     }
-  
     .nav-links button img {
       height: 14px;
       width: auto;
     }
-  
     #bh .left img {
       width: 328px;
       height: 278px;
@@ -506,36 +478,29 @@
     #bh .right h1 {
       font-size: 40px;
     }
-  
     #bh .right p {
       font-size: 12px;
     }
-  
     #bh .right button {
       width: 166px;
       height: 35px;
       font-size: xx-small;
     }
-  
     .work-container img {
       width: 250px;
       height: 200px;
     }
-  
     .work-container .left,
     .center,
     .right {
       font-size: 20px;
     }
-  
     .work-container .center {
       font-size: 20px;
     }
-  
     .work-container .right {
       font-size: 20px;
     }
-  
     nav {
       padding: 20px 5%;
     }
@@ -549,86 +514,71 @@
     #bh .right h1 {
       font-size: 40px;
     }
-  
     #bh .right p {
       font-size: 12px;
     }
-  
     #bh .right button {
       width: 166px;
       height: 35px;
       font-size: xx-small;
     }
-  
     #about .des p {
       width: 100%;
       height: 77px;
       font-size: 15px;
     }
   }
-  
   @media (max-width: 1175px) {
     .logo {
       width: 95px;
       height: 24px;
     }
-  
     nav button {
       width: 95px;
       height: 34px;
       font-size: 10px;
     }
-  
     nav button img {
       height: 10px;
       width: auto;
     }
   }
-  
   @media (max-width: 1005px) {
     .nav-links ul li a {
       font-size: 12px;
     }
-  
     #bh .left img {
       width: 255px;
       height: 218px;
     }
-  
     nav button {
       width: 75px;
       height: 24px;
       font-size: 10px;
     }
   }
-  
   @media (max-width: 880px) {
     .nav-links ul li a {
       font-size: 10px;
     }
-  
     .logo {
       width: 65px;
       height: 21px;
       padding: 0px;
     }
-  
     nav button {
       width: 65px;
       height: 21px;
       font-size: 9px;
     }
-  
     nav button img {
       height: 8px;
       width: auto;
     }
-  
     #bh .right p {
       font-size: 9px;
     }
   }
-  
   @media (max-width: 800px) {
     table {
       border-collapse: collapse;
@@ -637,26 +587,24 @@
       left: 4%;
     }
   }
-  
   @media (max-width: 768px) {
-    .header-sp {
-      display: inline-block;
+  
+    .header-sp{
+      display: unset;
+    }
+    
+    .header-sp{
       width: 100%;
       height: 81px;
       box-shadow: 0 3px 10px #dadada;
       background-color: #ffffff;
-      justify-content: space-between;
+      display: flex;
+    /* padding: 0px 10%; */
+    justify-content: space-around;
+    align-items: center;
     }
-  
-    .header-sp .logo-sp {
-      width: 179px;
-      height: 24px;
-      background-color: #ffffff;
-      cursor: pointer;
-    }
-  
     .header-sp button {
-      width: 165px;
+      width: 145px;
       height: 42px;
       border-radius: 21px;
       background-color: #b72e33;
@@ -669,7 +617,6 @@
       /* position: relative;
         left: 25%; */
     }
-  
     .dropbtn {
       color: white;
       padding: 16px;
@@ -677,29 +624,28 @@
       border: none;
       cursor: pointer;
     }
-  
+    
     /* Dropdown button on hover & focus */
-    .dropbtn:hover,
-    .dropbtn:focus {
+    .dropbtn:hover, .dropbtn:focus {
       background-color: #dadada;
     }
-  
+    
     /* The container <div> - needed to position the dropdown content */
     .dropdown {
       position: relative;
       display: inline-block;
     }
-  
+    
     /* Dropdown Content (Hidden by Default) */
     .dropdown-content {
       display: none;
       position: absolute;
       background-color: #f1f1f1;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
-  
+    
     /* Links inside the dropdown */
     .dropdown-content a {
       color: black;
@@ -707,45 +653,29 @@
       text-decoration: none;
       display: block;
     }
-  
+    
     /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-      background-color: #ddd
-    }
-  
+    .dropdown-content a:hover {background-color: #ddd}
+    
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-    .show {
-      display: block;
-    }
-  
-    nav {
-      display: flex;
-      padding: 20px 10%;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    #work .owl-prev,
-    #work .owl-next {
+    .show {display:block;}
+      #work .owl-prev,
+  #work .owl-next {
       width: 65px;
       height: max-content;
-    }
-  
-    #work .owl-prev span,
-    #work .owl-next span {
+  }
+  #work .owl-prev span,
+  #work .owl-next span {
       justify-content: space-evenly;
       justify-items: center;
       font-size: 44px;
-    }
-  
-    .header {
+  }
+    .header{
       display: none;
     }
-  
-    .logo {
+    /* .logo {
       padding-left: 14%;
-    }
-  
+    } */
     /* .work-container .center, .work-container .right{
           display: none;
       } */
@@ -754,23 +684,19 @@
       display: flex;
       flex-direction: column;
     }
-  
     #bh .left {
       flex: 30%;
     }
-  
     #bh .right {
       flex: 70%;
       padding-left: 30px;
       justify-content: space-around;
     }
-  
     #bh .left img {
       /* padding: 0%; */
       width: calc(100% - 30px);
       height: 80%;
     }
-  
     #bh .right h1 {
       width: 100%;
       height: 210px;
@@ -782,7 +708,6 @@
       letter-spacing: normal;
       line-height: 118px;
     }
-  
     #bh .right p {
       width: 100%;
       height: 457px;
@@ -795,7 +720,6 @@
       text-transform: uppercase;
       letter-spacing: 1.56px;
     }
-  
     #bh .right button {
       width: 80%;
       height: 90px;
@@ -813,16 +737,14 @@
       letter-spacing: 0.91px;
       cursor: pointer;
     }
-  
     #work {
       height: 1433px;
       text-align: center;
     }
-  
     #work h2 {
       width: 100%;
       height: 22px;
-  
+      text-align: center;
       font-size: 28px;
       font-weight: 400;
       font-style: normal;
@@ -830,7 +752,6 @@
       line-height: 38px;
       padding: 4% 0px;
     }
-  
     #work h1 {
       height: 65px;
       font-size: 70px;
@@ -842,7 +763,6 @@
       letter-spacing: 5.6px;
       padding: 4% 0px;
     }
-  
     #work span {
       height: 39px;
       color: #1d1d20;
@@ -851,11 +771,9 @@
       font-weight: 400;
       font-style: normal;
       letter-spacing: normal;
-  
       font-style: normal;
       letter-spacing: 4px;
     }
-  
     #work .work-container h3 {
       height: 39px;
       font-size: 50px;
@@ -865,26 +783,23 @@
       line-height: 38px;
       letter-spacing: 4px;
     }
-  
     #work button {
       width: 97px;
       height: 96px;
       font-size: 48px;
     }
-  
     .work-container .left,
     .work-container .center,
     .work-container .right {
-      padding-right: 5%;
+      padding-right: 7%;
+      text-align: center;
     }
-  
     .work-container .left img,
     .work-container .center img,
     .work-container .right img {
       width: calc(100% - 4%);
       height: 423px;
     }
-  
     #work .buttons {
       padding-top: 15%;
     }
@@ -893,3 +808,4 @@
       padding-top: 4%;
     }
   }
+  

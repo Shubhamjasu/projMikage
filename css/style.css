@@ -1,24 +1,26 @@
 * {
   margin: 0;
 }
+
 .header {
   width: 100%;
-  height: 81px;
+  height: max-content;
   box-shadow: 0 3px 10px #dadada;
   background-color: #ffffff;
   justify-content: center;
   align-items: center;
 }
-.header-sp{
+
+.header-sp {
   display: none;
 }
 
-
 nav {
   display: flex;
-  padding: 20px 10%;
+  padding: 10px 10%;
   justify-content: space-between;
   align-items: center;
+  /* display: inline-block; */
 }
 
 .logo {
@@ -27,22 +29,19 @@ nav {
   background-color: #ffffff;
   cursor: pointer;
 }
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 0px 9px;
-  position: relative;
-}
-.nav-links ul li a {
+
+a {
   text-decoration: none;
   color: #000000;
   font-family: "Noto Sans JP";
   font-size: 18px;
   font-weight: 500;
+  padding: 0px 9px;
 }
+
 .nav-links button {
-  width: 165px;
-  height: 42px;
+  width: 115px;
+  height: 36px;
   border-radius: 21px;
   background-color: #b72e33;
   background-image: linear-gradient(45deg, #ff7d00 20%, #ff544f 80%);
@@ -54,33 +53,46 @@ nav {
   /* position: relative;
     left: 25%; */
 }
+
 #bh {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 876px;
+  height: max-content;
   background-image: url("../images/レイヤー_6.jpg");
   /* box-sizing: border-box; */
   display: flex;
   flex-direction: row;
 }
+
 /* 
     display: flex;
     flex-direction: column;
 } */
 
 #bh .left,
-.right {
+#bh .right {
   flex: 50%;
-  padding-top: 190px;
+  /* padding-top: 190px; */
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
+
 #bh .left {
   padding-left: 10%;
 }
-#bh .right {
-  justify-content: space-between;
-  padding-right: 75px;
+
+#bh .left img {
+  width: 428px;
+  height: 338px;
 }
+
+#bh .right {
+  align-content: center;
+  margin-right: 5%;
+  justify-items: center;
+}
+
 #bh .right h1 {
   width: 100%;
   height: 10%;
@@ -92,18 +104,21 @@ nav {
   letter-spacing: normal;
   text-align: left;
 }
+
 #bh .right p {
   width: 100%;
-  height: 246px;
+  height: 70%;
   color: #1d1d20;
   font-family: "Noto Sans JP";
-  font-size: 15px;
+  font-size: 21px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: normal;
   line-height: 38px;
   text-align: left;
+  padding-top: 7%;
 }
+
 #bh .right button {
   width: 266px;
   height: 50px;
@@ -119,7 +134,10 @@ nav {
   letter-spacing: 0.91px;
   line-height: normal;
   cursor: pointer;
+  padding: 0%;
+  margin: 0%;
 }
+
 #work {
   width: 100%;
   height: 800px;
@@ -127,6 +145,7 @@ nav {
   padding: 3% 0%;
   text-align: center;
 }
+
 #work h2 {
   width: 100%;
   height: 22px;
@@ -138,6 +157,7 @@ nav {
   letter-spacing: normal;
   line-height: 38px;
 }
+
 #work h1 {
   width: 100%;
   height: 36px;
@@ -150,8 +170,9 @@ nav {
   line-height: 38px;
   text-transform: uppercase;
 }
+
 #work a {
-  width: 197px;
+  width: 100%;
   height: 20px;
   color: #ff7d00;
   font-family: Poppins;
@@ -161,27 +182,29 @@ nav {
   /* Text style for "h, ttps://" */
   font-style: normal;
   letter-spacing: 1.28px;
-  line-height: 5;
+  line-height: 4;
 }
+
 .work-container {
   display: flex;
   flex-direction: row;
-  height: 70%;
+  height: max-content;
+  margin-top: 6%;
 }
-.owl-stage img{
-    padding: 0 4%;
-    width: 250px;
-    height: 265px;
-    margin: auto;
-}
+
 .work-container h3 {
   text-align: center;
   padding-right: 5%;
 }
+
+.work-container img {
+  width: 80%;
+  height: 235px;
+}
+
 .work-container .left {
   flex: 33%;
   height: 100%;
-  padding: 6% 0%;
   color: #000000;
   font-family: "Poppins";
   font-size: 24px;
@@ -190,13 +213,13 @@ nav {
   letter-spacing: normal;
   line-height: 38px;
   text-align: left;
-  /* padding-left: 3%; */
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .work-container .center {
-  flex: 34%;
+  flex: 33%;
   height: 100%;
-  padding: 6% 0%;
   color: #000000;
   font-family: "Poppins";
   font-size: 24px;
@@ -205,12 +228,13 @@ nav {
   letter-spacing: normal;
   line-height: 38px;
   text-align: left;
-  /* padding-left: 3%; */
+  padding-left: 3%;
+  padding-right: 3%;
 }
+
 .work-container .right {
   flex: 33%;
   height: 100%;
-  padding: 6% 0%;
   color: #000000;
   font-family: "Poppins";
   font-size: 24px;
@@ -219,8 +243,10 @@ nav {
   letter-spacing: normal;
   line-height: 38px;
   text-align: left;
-  /* padding-left: 3%; */
+  padding-left: 3%;
+  padding-right: 3%;
 }
+
 #work .owl-prev,
 #work .owl-next {
   width: 55px;
@@ -230,11 +256,15 @@ nav {
   border: none;
   cursor: pointer;
 }
+
 #work .owl-prev span,
 #work .owl-next span {
   font-size: 38px;
   color: white;
   font-family: "Poppins";
+}
+#work button {
+ color: white;
 }
 #about {
   background-image: url("../images/bg.png");
@@ -242,11 +272,11 @@ nav {
   height: 547px;
   position: relative;
   text-align: center;
-  padding-top: 6%;
 }
-#about div {
+
+/* #about div {
   padding-top: 2%;
-}
+} */
 #about .title h2 {
   width: 100%;
   height: 32px;
@@ -257,7 +287,9 @@ nav {
   font-style: normal;
   letter-spacing: normal;
   line-height: 38px;
+  padding-top: 2%;
 }
+
 #about .capt h1 {
   width: 100%;
   height: 31px;
@@ -270,10 +302,12 @@ nav {
   line-height: 38px;
   text-transform: uppercase;
   letter-spacing: 3.04px;
+  padding-top: 2%;
 }
+
 #about .des p {
-  width: 100%;
-  height: 97px;
+  width: 60%;
+  height: max-content;
   color: #000000;
   font-family: "Noto Sans JP";
   font-size: 20px;
@@ -283,7 +317,7 @@ nav {
   line-height: 38px;
   letter-spacing: 2.08px;
   padding-top: 2%;
-  text-align: center;
+  padding-left: 20%;
 }
 
 #about .twit-links {
@@ -291,10 +325,12 @@ nav {
   flex-direction: row;
   justify-content: center;
 }
+
 #about .twit-links div {
   padding: 2% 2%;
   width: 65px;
 }
+
 #about .twit-links div a {
   height: 19px;
   color: #00aced;
@@ -307,6 +343,7 @@ nav {
   text-align: left;
   text-decoration: none;
 }
+
 #cmpy {
   width: 100%;
   height: 748px;
@@ -328,6 +365,7 @@ table {
   position: relative;
   left: 10%;
 }
+
 table tr:nth-child(odd) {
   background-color: #fff9f4;
 }
@@ -349,6 +387,7 @@ th {
   letter-spacing: 2.08px;
   padding-left: 4%;
 }
+
 td {
   color: #000000;
   font-family: "Noto Sans CJ Kjp";
@@ -361,6 +400,7 @@ td {
   letter-spacing: 2.08px;
   padding-left: 9%;
 }
+
 #cmpy .title {
   color: #ff7d00;
   font-family: "Poppins";
@@ -389,6 +429,7 @@ td {
   position: relative;
   text-align: center;
 }
+
 #cont .title {
   width: 100%;
   height: 21px;
@@ -398,8 +439,9 @@ td {
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  padding-top: 6%;
+  padding-top: 3%;
 }
+
 #cont .capt {
   width: 100%;
   height: 36px;
@@ -411,8 +453,18 @@ td {
   letter-spacing: normal;
   padding-top: 3%;
 }
+.cbtn{
+  width: 50%;
+ padding:0% 25%;
+  display: flex;
+  flex-direction: row;
+}
+.cbtn .clbtn ,.cbtn .crbtn{
+  flex: 40%;
+  padding: 1%;
+}
 #cont button {
-  width: 266px;
+  width: 100%;
   height: 50px;
   border-radius: 25px;
   background-color: #b72e33;
@@ -427,7 +479,7 @@ td {
 }
 
 #cont div {
-  padding-top: 2%;
+  padding-top: 1%;
 }
 
 #cpr8 {
@@ -435,6 +487,7 @@ td {
   height: 81px;
   background-color: #ffffff;
 }
+
 #cpr8 p {
   width: 100%;
   height: 22px;
@@ -445,157 +498,113 @@ td {
   text-align: center;
   padding: 2% 0%;
 }
-@media (max-width: 1310px) {
-  .nav-links ul li a {
-    font-size: 15px;
-  }
+
+@media (max-width: 1366px) {
   .logo {
-    width: 110px;
-    height: 34px;
+    width: 149px;
+    height: 20px;
   }
+
+  a {
+    font-size: 15px;
+    padding: 0px 7px;
+  }
+
+  #bh .right h1 {
+    font-size: 54px;
+  }
+
+  #bh .right p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    width: 98px;
+    height: 20px;
+  }
+
+  a {
+    font-size: 13px;
+    padding: 0px 5px;
+  }
+
   .nav-links button {
-    width: 110px;
-    height: 34px;
-    font-size: 16px;
+    width: 98px;
+    height: 25px;
+
+    font-size: 14px;
+    font-weight: 400;
   }
+
   .nav-links button img {
-    height: 14px;
-    width: auto;
+    width: 12px;
+    height: 12px;
   }
+
   #bh .left img {
     width: 328px;
-    height: 278px;
-    padding-top: 10%;
+    height: 290px;
   }
 
   #bh .right h1 {
     font-size: 40px;
   }
+
   #bh .right p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  #bh .right button {
+    width: 200px;
+    height: 40px;
     font-size: 12px;
   }
-  #bh .right button {
-    width: 166px;
-    height: 35px;
-    font-size: xx-small;
-  }
-  .work-container img {
-    width: 250px;
-    height: 200px;
-  }
-  .work-container .left,
-  .center,
-  .right {
-    font-size: 20px;
-  }
-  .work-container .center {
-    font-size: 20px;
-  }
-  .work-container .right {
-    font-size: 20px;
-  }
-  nav {
-    padding: 20px 5%;
+
+  #cont {
+    height: max-content;
   }
 }
 
-@media (max-width: 1024px) {
-  .logo {
-    width: 19px;
+@media (max-width: 900px) {
+  a {
+    font-size: 11px;
+    padding: 0px 3px;
   }
 
-  #bh .right h1 {
-    font-size: 40px;
-  }
   #bh .right p {
     font-size: 12px;
+    line-height: 30px;
   }
+
   #bh .right button {
-    width: 166px;
-    height: 35px;
-    font-size: xx-small;
-  }
-  #about .des p {
-    width: 100%;
-    height: 77px;
-    font-size: 15px;
-  }
-}
-@media (max-width: 1175px) {
-  .logo {
-    width: 95px;
-    height: 24px;
-  }
-  nav button {
-    width: 95px;
-    height: 34px;
+    width: 180px;
+    height: 30px;
     font-size: 10px;
   }
-  nav button img {
-    height: 10px;
-    width: auto;
-  }
-}
-@media (max-width: 1005px) {
-  .nav-links ul li a {
-    font-size: 12px;
-  }
+
   #bh .left img {
-    width: 255px;
-    height: 218px;
-  }
-  nav button {
-    width: 75px;
-    height: 24px;
-    font-size: 10px;
+    width: 288px;
+    height: 250px;
   }
 }
-@media (max-width: 880px) {
-  .nav-links ul li a {
-    font-size: 10px;
-  }
-  .logo {
-    width: 65px;
-    height: 21px;
-    padding: 0px;
-  }
-  nav button {
-    width: 65px;
-    height: 21px;
-    font-size: 9px;
-  }
-  nav button img {
-    height: 8px;
-    width: auto;
-  }
-  #bh .right p {
-    font-size: 9px;
-  }
-}
-@media (max-width: 800px) {
-  table {
-    border-collapse: collapse;
-    width: 90%;
-    position: relative;
-    left: 4%;
-  }
-}
-@media (max-width: 768px) {
 
-  .header-sp{
+@media (max-width: 768px) {
+  .header-sp {
     display: unset;
   }
-  
-  .header-sp{
+
+  .header-sp {
     width: 100%;
-    height: 81px;
-    box-shadow: 0 3px 10px #dadada;
-    background-color: #ffffff;
+    height: max-content;
     display: flex;
-  /* padding: 0px 10%; */
-  justify-content: space-around;
-  align-items: center;
+    /* padding: 10px 10%; */
+    justify-content: space-around;
+    align-items: center;
   }
+
   .header-sp button {
     width: 145px;
     height: 42px;
@@ -610,35 +619,36 @@ td {
     /* position: relative;
       left: 25%; */
   }
+
   .dropbtn {
     color: white;
-    padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
   }
-  
+
   /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+  .dropbtn:hover,
+  .dropbtn:focus {
     background-color: #dadada;
   }
-  
+
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  
+
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
@@ -646,50 +656,58 @@ td {
     text-decoration: none;
     display: block;
   }
-  
+
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-    #work .owl-prev,
-#work .owl-next {
+  .show {
+    display: block;
+  }
+
+  #work .owl-prev,
+  #work .owl-next {
     width: 65px;
     height: max-content;
-}
-#work .owl-prev span,
-#work .owl-next span {
+  }
+
+  #work .owl-prev span,
+  #work .owl-next span {
     justify-content: space-evenly;
     justify-items: center;
     font-size: 44px;
-}
-  .header{
+  }
+
+  .header {
     display: none;
   }
-  /* .logo {
-    padding-left: 14%;
-  } */
-  /* .work-container .center, .work-container .right{
-        display: none;
-    } */
+
   #bh {
-    height: 2000px;
+    height: max-content;
     display: flex;
     flex-direction: column;
+    background-image: url("/images/レイヤー_668.png");
+    /* background-image: url("../images/bg.png"); */
   }
+
   #bh .left {
     flex: 30%;
   }
+
   #bh .right {
     flex: 70%;
     padding-left: 30px;
     justify-content: space-around;
   }
+
   #bh .left img {
     /* padding: 0%; */
-    width: calc(100% - 30px);
-    height: 80%;
+    width: calc(90% - 30px);
+    height:calc(80%);
   }
+
   #bh .right h1 {
     width: 100%;
     height: 210px;
@@ -701,6 +719,7 @@ td {
     letter-spacing: normal;
     line-height: 118px;
   }
+
   #bh .right p {
     width: 100%;
     height: 457px;
@@ -713,6 +732,7 @@ td {
     text-transform: uppercase;
     letter-spacing: 1.56px;
   }
+
   #bh .right button {
     width: 80%;
     height: 90px;
@@ -730,74 +750,186 @@ td {
     letter-spacing: 0.91px;
     cursor: pointer;
   }
+
   #work {
-    height: 1433px;
+    height: max-content;
     text-align: center;
   }
-  #work h2 {
-    width: 100%;
-    height: 22px;
-
-    font-size: 28px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 38px;
-    padding: 4% 0px;
-  }
-  #work h1 {
-    height: 65px;
-    font-size: 70px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 38px;
-    text-transform: uppercase;
-    letter-spacing: 5.6px;
-    padding: 4% 0px;
-  }
-  #work span {
-    height: 39px;
-    color: #1d1d20;
-    font-family: "Poppins";
-    font-size: 50px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-
-    font-style: normal;
-    letter-spacing: 4px;
-  }
-  #work .work-container h3 {
-    height: 39px;
-    font-size: 50px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 38px;
-    letter-spacing: 4px;
-  }
-  #work button {
-    width: 97px;
-    height: 96px;
-    font-size: 48px;
-  }
-  .work-container .left,
-  .work-container .center,
-  .work-container .right {
-    padding-right: 5%;
+  #work h3 {
+    padding-left: 2%;
   }
   .work-container .left img,
   .work-container .center img,
   .work-container .right img {
-    width: calc(100% - 4%);
-    height: 423px;
+    width: 674px;
+    height:60%;
   }
-  #work .buttons {
-    padding-top: 15%;
+  .work-container .left,
+  .work-container .center,
+  .work-container .right {
+    text-align: center;
+    font-size: 30px;
   }
-
+  #work button {
+    width: 45px;
+    height: 40px;
+    font-size: 28px;
+  }
+  #about {
+    height: max-content;
+  }
+  #cmpy {
+    height: max-content;
+  }
+  #cont {
+    height: max-content;
+  }
+  .cbtn{
+    width: 50%;
+    padding:0% 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  #cont button {
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    letter-spacing: 0.71px;
+  }
+  #cpr8 {
+    height: max-content;
+  }
   #about div {
     padding-top: 4%;
+  }
+  .header-sp button img{
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 626px) {
+
+
+  .header-sp button {
+    width: 95px;
+    height: 32px;
+    font-size: 15px;
+  }
+  #bh .right h1{
+    width: 100%;
+    height: 200px;
+   
+    font-size: 84px;
+   
+    line-height: 100px;
+  }
+  #bh .right p {
+    width: 100%;
+    height: 600px;
+    font-size: 20px;
+    line-height: 46px;
+    
+  }
+  #bh .right button {
+    width: 100%;
+    height: 50px;
+    font-size: 23px;
+    
+  }
+  #cmpy .title {
+   
+    font-size: 20px;
+    line-height: 38px;
+  }
+  
+  #cmpy .capt {
+
+    font-size: 28px;
+
+    line-height: 38px;
+    letter-spacing: 2.04px;
+  }
+  th,
+td {
+  padding: 7px;
+}
+
+th {
+  
+  font-size: 11px;
+
+  line-height: 28px;
+ 
+  letter-spacing: 1.08px;
+  padding-left: 4%;
+}
+
+td {
+
+  font-size: 11px;
+
+  line-height: 28px;
+  letter-spacing: 1.08px;
+  padding-left: 9%;
+}
+#cont .title {
+  
+  height: 18px;
+ 
+  font-size: 18px;
+
+  padding-top: 2%;
+}
+
+#cont .capt {
+  height: 20px;
+
+  font-size: 20px;
+  
+  padding-top: 5%;
+}
+.header-sp button img{
+  height: 13px;
+  width: 13px;
+}
+}
+@media (max-width: 428px){
+  .header-sp {
+  
+    justify-content:unset;
+    align-items:unset;
+    padding:unset;
+    display:inline-block;
+  }
+  .logo-sp{
+    width: 10px;
+    height: 40px;
+  }
+  .dropbtn{
+    width:30px;
+    height: 40px;
+  }
+  .header-sp button {
+    width: 75px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .header-sp button img{
+    height: 10px;
+    width: 10px;
+  }
+  #bh .right h1{
+    height: 200px;
+   
+    font-size: 60px;
+   
+    line-height: 100px;
+  }
+  #bh .right p {
+    width: 100%;
+    height: 600px;
+    font-size: 20px;
+    line-height: 46px;
+    
   }
 }
