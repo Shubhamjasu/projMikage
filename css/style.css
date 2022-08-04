@@ -346,7 +346,7 @@ a {
 
 #cmpy {
   width: 100%;
-  height: 748px;
+  height: max-content;
   position: relative;
   text-align: center;
   padding: 9% 0%;
@@ -424,7 +424,7 @@ td {
 
 #cont {
   width: 100%;
-  height: 446px;
+  height: max-content;
   background-color: #f5f5f5;
   position: relative;
   text-align: center;
@@ -458,14 +458,16 @@ td {
  padding:0% 25%;
   display: flex;
   flex-direction: row;
+  padding-bottom: 2%;
+
 }
 .cbtn .clbtn ,.cbtn .crbtn{
   flex: 40%;
-  padding: 1%;
+  padding: 2%;
 }
 #cont button {
   width: 100%;
-  height: 50px;
+  height: 150%;
   border-radius: 25px;
   background-color: #b72e33;
   background-image: linear-gradient(45deg, #ff7d00 20%, #ff544f 80%);
@@ -479,12 +481,12 @@ td {
 }
 
 #cont div {
-  padding-top: 1%;
+  padding-top: 2%;
 }
 
 #cpr8 {
   width: 100%;
-  height: 81px;
+  height: fit-content;
   background-color: #ffffff;
 }
 
@@ -493,10 +495,10 @@ td {
   height: 22px;
   color: #959595;
   font-family: "Poppins";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 
 @media (max-width: 1366px) {
@@ -667,11 +669,11 @@ td {
     display: block;
   }
 
-  #work .owl-prev,
+  /* #work .owl-prev,
   #work .owl-next {
     width: 65px;
     height: max-content;
-  }
+  } */
 
   #work .owl-prev span,
   #work .owl-next span {
@@ -771,16 +773,29 @@ td {
     font-size: 30px;
   }
   #work button {
-    width: 45px;
-    height: 40px;
-    font-size: 28px;
+    width: 15px;
+    height: fit-content;
+    font-size: 24px;
   }
   #about {
     height: max-content;
   }
-  #cmpy {
-    height: max-content;
+  #about .des p {
+   
+    font-size: 15px;
+
+    line-height: 28px;
+    letter-spacing: 1.08px;
+
   }
+  #cpr8 p {
+    width: 100%;
+    height: max-content;
+
+    font-size: 15px;
+  
+  }
+  
   #cont {
     height: max-content;
   }
@@ -894,16 +909,10 @@ td {
 }
 }
 @media (max-width: 428px){
-  .header-sp {
   
-    justify-content:unset;
-    align-items:unset;
-    padding:unset;
-    display:inline-block;
-  }
-  .logo-sp{
-    width: 10px;
-    height: 40px;
+  .logo-sp img{
+    width: 120px;
+    height: 20px;
   }
   .dropbtn{
     width:30px;
@@ -911,8 +920,8 @@ td {
   }
   .header-sp button {
     width: 75px;
-    height: 40px;
-    font-size: 12px;
+    height: 25px;
+    font-size: 11px;
   }
   .header-sp button img{
     height: 10px;
@@ -928,8 +937,78 @@ td {
   #bh .right p {
     width: 100%;
     height: 600px;
-    font-size: 20px;
-    line-height: 46px;
+    font-size: 18px;
+    line-height: 40px;
     
+  }
+  #cont button {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 0.71px;
+  }
+  #bh .right button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    
+  }
+}
+@media (max-width: 350px){
+ 
+  #bh .right p {
+    width: 100%;
+    height: 600px;
+    font-size: 15px;
+    line-height: 37px;
+    
+  }
+  #cont button {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 0.71px;
+  }
+  #bh .right button {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    
+  }
+  #about .title h2 {
+    
+    height: 32px;
+  
+    font-size: 22px;
+   
+  }
+  
+  #about .capt h1 {
+   
+    font-size: 30px;
+   
+    letter-spacing: 2.04px;
+
+  }
+  #about .des p {
+   
+    font-size: 12px;
+
+    line-height: 22px;
+    letter-spacing: 1.08px;
+
+  }
+  #cont button {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    letter-spacing: 0.51px;
+  }
+  #cpr8 p {
+    width: 100%;
+    height: max-content;
+
+    font-size: 12px;
+  
   }
 }
